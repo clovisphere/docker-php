@@ -23,7 +23,7 @@ The content should look like :point_down:
 ├── Dockerfile
 ├── README.md
 ├── app
-│   └── # place your PHP code here..
+│   └── # place your PHP code here.. (nginx will serve files in `public/` - see the example `app`)
 └── docker-compose.yml
 ```
 
