@@ -16,3 +16,13 @@ services:
             dockerfile: Dockerfile
         volumes:
             - ./app:/app
+    db:
+        image: mysql:5.6
+        ports: 
+            - "5000:3306"
+        environment:
+            MYSQL_DATABASE: demo
+            MYSQL_RANDOM_ROOT_PASSWORD: "true"
+            MYSQL_USER: demo
+            MYSQL_PASSWORD: demo
+
