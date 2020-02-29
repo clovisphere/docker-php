@@ -1,6 +1,6 @@
 # docker-php
 
-A very basic development environment setup :computer: for [PHP](https://www.php.net/):elephant: using [Docker](https://www.docker.com/):anchor::ship:.
+A very basic development environment setup :computer: for [PHP](https://www.php.net/):elephant: using [Docker](https://www.docker.com/) :anchor: :ship:.
 
 #### Prerequisite
 
