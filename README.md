@@ -35,7 +35,7 @@ $ docker-compose up --build
 
 If everything went well, your app will be available on [http://localhost:8080](http://localhost:8080).
 
-To check your containers status(es) :bar_chart:, run:
+To check your container(s) status(es) :bar_chart:, run:
 
 ```bash
 $ docker ps -a
