@@ -8,14 +8,15 @@ services:
         ports:
             - "8080:80"
         volumes:
-            - ./app:/app
+            - ./app/public:/var/www/html
             - ./.devops/nginx/default.conf:/etc/nginx/conf.d/default.conf
     web:
         build:
             context: .
             dockerfile: Dockerfile
         volumes:
-            - ./app:/app
+            - ./app/public:/var/www/html
+            - ./app:/var/www
     db:
         image: mysql:5.6
         ports: 
