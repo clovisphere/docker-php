@@ -16,7 +16,6 @@ services:
             dockerfile: Dockerfile
         volumes:
             - ./app/public:/var/www/html
-            - ./app:/var/www
     db:
         image: mysql:5.6
         ports: 
