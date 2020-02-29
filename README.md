@@ -27,7 +27,7 @@ The content should look like :point_down:
 
 There's a `.devops/` folder that contains `nginx` configs.
 
-2. To bring to live your setup :stars: :sunrise: :rocket:
+2. To bring to life your setup :stars: :sunrise: :rocket:
 
 ```bash
 $ docker-compose up --build
