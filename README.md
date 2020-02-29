@@ -41,32 +41,4 @@ To check your container(s) status(es) :bar_chart:, run:
 $ docker ps -a
 ```
 
-To stop and remove all containers:
-
-```bash
-$ docker stop $(docker ps -a -q) && docker rm $(docker ps -a -q)
-```
-
-:warning: _this will stop and remove all your containers, use with caution_ :boom:
-
-To remove all images:
-
-```bash
-$ docker rmi -f $(docker images -q)
-```
-
-:warning: _this will delete all your images, use with caution_ :boom:
-
-In case of any doubt, run:
-
-```bash
-$ docker --help
-```
-
-or
-
-```bash
-$ docker-compose --help
-```
-
 Enjoy :v::sunglasses:
