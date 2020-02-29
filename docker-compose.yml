@@ -2,20 +2,21 @@ version: '3'
 
 services:
     httpd:
-        image: nginx:alpine
+        build: 
+            context: .
+            dockerfile: ./.devops/nginx/Dockerfile
         restart: unless-stopped
         tty: true
         ports:
             - "8080:80"
         volumes:
-            - ./app/public:/var/www/html
-            - ./.devops/nginx/default.conf:/etc/nginx/conf.d/default.conf
+            - data:/var/www/html/public
     web:
         build:
             context: .
             dockerfile: Dockerfile
         volumes:
-            - ./app/public:/var/www/html
+            - data:/var/www/html/public
     db:
         image: mysql:5.6
         ports: 
@@ -25,4 +26,6 @@ services:
             MYSQL_RANDOM_ROOT_PASSWORD: "true"
             MYSQL_USER: demo
             MYSQL_PASSWORD: demo
+volumes:
+    data:
 
