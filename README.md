@@ -43,4 +43,12 @@ To check your container(s) status(es) :bar_chart:, run:
 $ docker ps -a
 ```
 
+3. Cleanup
+
+```bash
+$ docker stop $(docker ps -a -q) && docker rm $(docker ps -a -q)
+$ docker rmi -f $(docker images -q)
+$ docker system prune -a --volumes -f
+```
+
 Enjoy :v::sunglasses:
