@@ -57,13 +57,13 @@ $ docker rmi -f $(docker images -q)
 
 :warning: _this will delete all your images, use with caution_ :boom:
 
-In case of any doubt, please:
+In case of any doubt, run:
 
 ```bash
 $ docker --help
 ```
 
-and 
+or
 
 ```bash
 $ docker-compose --help
