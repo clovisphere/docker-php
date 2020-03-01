@@ -1,10 +1,11 @@
 version: '3'
 
 services:
-    httpd:
+    nginx:
         build: 
             context: .
             dockerfile: ./.devops/nginx/Dockerfile
+        container_name: booky-restful-api-nginx-container
         restart: unless-stopped
         tty: true
         ports:
@@ -15,6 +16,7 @@ services:
         build:
             context: .
             dockerfile: Dockerfile
+        container_name: booky-restful-api-php-fpm-container
         environment:
             DB_HOSTNAME: db
             DB_DATABASE: booky # change accordingly
@@ -24,6 +26,7 @@ services:
             - data:/var/www/html
     db:
         image: mysql:5.6
+        container_name: booky-restful-api-db-container
         ports: 
             - "5000:3306"
         volumes:
