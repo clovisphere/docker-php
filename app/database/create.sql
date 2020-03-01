@@ -3,7 +3,7 @@ SET time_zone = 'Africa/Nairobi';
 SET NAMES 'utf8mb4' COLLATE 'utf8mb4_unicode_ci';
 
 --
--- Database: `booky`
+-- Database: `booky` :-)
 --
 
 
