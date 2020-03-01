@@ -21,34 +21,39 @@ The content should look like :point_down:
 ```console
 .
 ├── Dockerfile
+├── Makefile
 ├── README.md
-├── app
-│   └── # place your PHP code here.. (nginx will serve files in `public/` - see the example `app`)
+├── app # This the sample app we are using - Booky:-)
+│   ├── README.md
+│   ├── bin
+│   │   └── run.sh
+│   ├── composer.json
+│   ├── database
+│   │   └── create.sql
+│   ├── logs
+│   │   └── README.md
+│   ├── public
+│   │   └── index.php
+│   ├── src
+│   │   ├── Booky
+│   │   │   ├── Middleware
+│   │   │   └── Models
+│   │   │       └── Author.php
+│   │   ├── init.php
+│   │   └── settings.php
+│   ├── test
+│   └── var
 └── docker-compose.yml
 ```
 
 There's a `.devops/` folder that contains `nginx` configs.
 
-2. To bring to life your setup :stars: :sunrise: :rocket:
+2. To bring to life your setup :stars: :rocket:
 
 ```bash
-$ docker-compose up --build
+$ make
 ```
 
 If everything went well, your app will be available on [http://localhost:8080](http://localhost:8080)
-
-To check your container(s) status(es) :bar_chart:, run:
-
-```bash
-$ docker ps -a
-```
-
-3. Cleanup
-
-```bash
-$ docker stop $(docker ps -a -q) && docker rm $(docker ps -a -q)
-$ docker rmi -f $(docker images -q)
-$ docker system prune -a --volumes -f
-```
 
 Enjoy :v::sunglasses:
