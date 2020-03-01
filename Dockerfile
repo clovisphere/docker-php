@@ -3,10 +3,13 @@ LABEL maintainer "Clovis Mugaruka <clovis.mugaruka@gmail.com>"
 
 WORKDIR /var/www/html
 
-RUN apt-get update && apt-get install -y libmcrypt-dev \
-    libmagickwand-dev --no-install-recommends \
-    && docker-php-ext-install pdo_mysql mysqli \
-    && rm -r /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y \
+        libmcrypt-dev \
+        libzip-dev \
+        zip \
+        libmagickwand-dev --no-install-recommends \
+        && docker-php-ext-install zip pdo_mysql mysqli \
+        && rm -r /var/lib/apt/lists/*
 
 COPY ./app /var/www/html
 
