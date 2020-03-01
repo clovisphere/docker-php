@@ -1,5 +1,5 @@
 {
-    "name": "Booky",
+    "name": "clovisphere/booky",
     "description": "A very basic book RESTful API example",
     "keywords": [
         "microframework",
@@ -7,8 +7,6 @@
         "router",
         "psr7"
     ],
-    "homepage": "",
-    "license": "",
     "authors": [
         {
             "name": "Clovis Mugaruka",
@@ -22,12 +20,12 @@
         "slim/psr7": "^1.0",
         "ext-json": "*",
         "monolog/monolog": "^1.24",
-        "php-di/php-di": "^6.0","
-        "vlucas/phpdotenv": "^4.0"
+        "php-di/php-di": "^6.0",
+        "vlucas/phpdotenv": "^4.1"
     },
     "require-dev": {
         "phpunit/phpunit": "^7.5"
-    }
+    },
     "autoload": {
         "psr-4": { "Booky\\": "src/Booky/"}
     },
@@ -35,7 +33,7 @@
         "psr-4": {
             "Tests\\": "tests/"
         }
-    }
+    },
     "scripts": {
         "start": "php -S localhost:8080 -t public",
         "test": "phpunit"
