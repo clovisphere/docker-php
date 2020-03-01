@@ -1,4 +1,4 @@
-# Booky - Slim PHP:elephant: REST API
+# Booky - REST API
 
 ![Slim Framework Logo](doc/img/slim-logo.png)
 
