@@ -1,1 +1,1 @@
-# Booky - RESTful API
+# Booky - Slim (PHP:elephant:) RESTful API
