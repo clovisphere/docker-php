@@ -1,6 +1,6 @@
 # Booky - Slim PHP:elephant: REST API
 
-Example of a REST API built with the [Slim PHP micro framework](http://www.slimframework.com/).
+Example REST API built with [Slim PHP micro framework](http://www.slimframework.com/).
 
 ## Prerequisite
 
@@ -18,3 +18,7 @@ $ composer install
 $ composer database
 $ composer start
 ```
+
+# API Documentaion
+
+(Work in progress.. :disappointed:)
