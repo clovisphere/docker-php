@@ -10,13 +10,18 @@ services:
         ports:
             - "8080:80"
         volumes:
-            - data:/var/www/html/public
+            - data:/var/www/html
     web:
         build:
             context: .
             dockerfile: Dockerfile
+        environment:
+            DB_HOSTNAME: db
+            DB_DATABASE: booky # change accordingly
+            DB_USERNAME: demo
+            DB_PASSWORD: demo
         volumes:
-            - data:/var/www/html/public
+            - data:/var/www/html
     db:
         image: mysql:5.6
         ports: 
@@ -24,7 +29,7 @@ services:
         volumes:
             - ./app/database:/docker-entrypoint-initdb.d/
         environment:
-            MYSQL_DATABASE: demo
+            MYSQL_DATABASE: booky
             MYSQL_RANDOM_ROOT_PASSWORD: "true"
             MYSQL_USER: demo
             MYSQL_PASSWORD: demo
