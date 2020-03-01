@@ -1,6 +1,6 @@
 {
     "name": "clovisphere/booky",
-    "description": "A very basic book RESTful API example",
+    "description": "A very basic RESTful API example | Booky is a my books' api",
     "keywords": [
         "microframework",
         "rest",
