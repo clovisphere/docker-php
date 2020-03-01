@@ -26,7 +26,7 @@ if (false) { // Should be set to true in production
 }
 
 // Set up settings
-$settings = require __DIR__ . '/../bootstrap.php';
+$settings = require __DIR__ . '/../settings.php';
 $settings($containerBuilder);
 
 // Build PHP-DI Container instance
