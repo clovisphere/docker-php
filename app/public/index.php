@@ -9,6 +9,15 @@ use Booky\Models\Author;
 
 require __DIR__ . '/../vendor/autoload.php';
 
+// load env variable
+$base_dir = __DIR__ . '/../';
+$env = $base_dir . '.env';
+
+if (file_exists($env)) {
+    $dotenv = new Dotenv\Dotenv($base_dir);
+    $dotenv->load();
+}
+
 // Instantiate PHP-DI ContainerBuilder
 $containerBuilder = new ContainerBuilder();
 
