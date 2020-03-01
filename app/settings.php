@@ -12,12 +12,12 @@ return function (ContainerBuilder $containerBuilder) {
         'settings' => [
             'displayErrorDetails' => true, // Should be set to false in production
             'db' => [
-                'driver'    => 'mysql',
-                'host'      => '',
-                'database'  => '',
-                'username'  => '',
-                'password'  => '',
-                'charset'   => 'utf8',
+                'driver'    => getenv('DB_DRIVER'),
+                'host'      => getenv('DB_HOSTNAME'),
+                'database'  => getenv('DB_DATABASE'),
+                'username'  => getenv('DB_USERNAME'),
+                'password'  => getenv('DB_PASSWORD'),
+                'charset'   => 'utf8mb4',
                 'collation' => 'utf8_unicode_ci',
                 'prefix'    => '',
             ]
