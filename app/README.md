@@ -22,3 +22,7 @@ $ composer start
 # API Documentaion
 
 (Work in progress.. :disappointed:)
+
+# Credit
+
+I owe a lot to [Mauro Bonfietti](https://github.com/maurobonfietti):clap:, I wouldn't have understood some of the magic of Slim without this [amazing repo](https://github.com/maurobonfietti/rest-api-slim-php).
