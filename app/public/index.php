@@ -12,7 +12,7 @@ AppFactory::setContainer($container);
 $app = AppFactory::create();
 
 /**
- *  App's routes ~> TODO: move this to a different folder
+ *  Routes // TODO: move this to a different folder
  */
 
 $app->get('/', function (Request $request, Response $response, $args) {
