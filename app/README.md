@@ -13,7 +13,7 @@ Example REST API built with [Slim PHP micro framework](http://www.slimframework.
 
 # Installation
 
-###### using PHP built-in server and composer:
+###### Using PHP built-in server and composer:
 
 ```bash
 $ composer install
