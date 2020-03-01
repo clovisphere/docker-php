@@ -32,6 +32,7 @@
     },
     "scripts": {
         "start": "php -S localhost:8080 -t public",
-        "database": "./bin/run.sh"
+        "database": "./bin/run.sh",
+        "clean": "rm -rf vendor composer.lock"
     }
 }
