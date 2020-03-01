@@ -6,7 +6,8 @@ A very basic development environment setup :computer: for [PHP](https://www.php.
 
 #### Prerequisite
 
-Please install [docker](https://hub.docker.com/search?q=&type=edition&offering=community&sort=updated_at&order=desc) and [docker-compose](https://docs.docker.com/compose/install/) :wink:
++ [docker](https://hub.docker.com/search?q=&type=edition&offering=community&sort=updated_at&order=desc)
++ [docker-compose](https://docs.docker.com/compose/install/)
 
 #### Usage
 
