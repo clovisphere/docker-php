@@ -27,4 +27,4 @@ $ composer start
 
 # Credit
 
-Big thanks to [Mauro Bonfietti](https://github.com/maurobonfietti):clap:.
++ Big thanks to [Mauro Bonfietti](https://github.com/maurobonfietti):clap:
