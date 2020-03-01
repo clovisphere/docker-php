@@ -27,4 +27,4 @@ $ composer start
 
 # Credit
 
-I owe a lot to [Mauro Bonfietti](https://github.com/maurobonfietti):clap:, I wouldn't have understood some of the magic of [Slim](http://www.slimframework.com/) without this [amazing repo](https://github.com/maurobonfietti/rest-api-slim-php).
+Big thanks to [Mauro Bonfietti](https://github.com/maurobonfietti):clap:.
