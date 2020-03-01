@@ -23,26 +23,7 @@ The content should look like :point_down:
 ├── Dockerfile
 ├── Makefile
 ├── README.md
-├── app # This the sample app we are using - Booky:-)
-│   ├── README.md
-│   ├── bin
-│   │   └── run.sh
-│   ├── composer.json
-│   ├── database
-│   │   └── create.sql
-│   ├── logs
-│   │   └── README.md
-│   ├── public
-│   │   └── index.php
-│   ├── src
-│   │   ├── Booky
-│   │   │   ├── Middleware
-│   │   │   └── Models
-│   │   │       └── Author.php
-│   │   ├── init.php
-│   │   └── settings.php
-│   ├── test
-│   └── var
+├── app
 └── docker-compose.yml
 ```
 
