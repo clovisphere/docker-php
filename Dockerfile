@@ -14,11 +14,11 @@ RUN apt-get update && apt-get install -y \
 
 COPY ./app /var/www/html
 
-# Install composer
-RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+# -- uncomment if composer is needed --
 
-# -- uncomment of needed --
-#
+# Install composer
+#RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+
 # Install composer dependencies
 #RUN composer install --prefer-dist --no-scripts --no-dev --no-autoloader && rm -rf /root/.composer
 
