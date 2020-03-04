@@ -2,8 +2,6 @@
 
 A very basic development environment setup :computer: for [PHP](https://www.php.net/):elephant: using [Docker](https://www.docker.com/) :anchor: :ship:.
 
-**Note:** The sample app uses [Slim-PHP](http://www.slimframework.com/), but this setup can be used with other PHP frameworks, or vanilla PHP.
-
 #### Prerequisite
 
 + [docker](https://hub.docker.com/search?q=&type=edition&offering=community&sort=updated_at&order=desc)
@@ -24,7 +22,7 @@ The content should look like :point_down:
 ├── Dockerfile
 ├── Makefile
 ├── README.md
-├── app
+├── app  # add your php app/
 └── docker-compose.yml
 ```
 

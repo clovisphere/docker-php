@@ -17,7 +17,10 @@ COPY ./app /var/www/html
 # Install composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
+# -- uncomment of needed --
+#
 # Install composer dependencies
-RUN composer install --prefer-dist --no-scripts --no-dev --no-autoloader && rm -rf /root/.composer
+#RUN composer install --prefer-dist --no-scripts --no-dev --no-autoloader && rm -rf /root/.composer
+
 # Finish composer
-RUN composer dump-autoload --no-scripts --no-dev --optimize
+#RUN composer dump-autoload --no-scripts --no-dev --optimize
