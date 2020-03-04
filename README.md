@@ -22,7 +22,7 @@ The content should look like :point_down:
 ├── Dockerfile
 ├── Makefile
 ├── README.md
-├── app  # add your php app/
+├── app  # -- your PHP app
 └── docker-compose.yml
 ```
 
