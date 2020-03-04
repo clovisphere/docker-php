@@ -1,1 +1,1 @@
-Add your index.php here
+This is just an example
