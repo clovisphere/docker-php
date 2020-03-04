@@ -1,1 +1,1 @@
-Add your .sql file
+Add script to populate your database..
