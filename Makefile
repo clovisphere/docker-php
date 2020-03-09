@@ -1,4 +1,4 @@
-.PHONY: up down nginx
+.PHONY: up down db
 .DEFAULT_GOAL := up
 
 db:
