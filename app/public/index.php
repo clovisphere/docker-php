@@ -1,3 +1,3 @@
 <?php
 
-echo "Up and running.."
+echo "Up and running..";
